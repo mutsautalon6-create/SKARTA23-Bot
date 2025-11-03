@@ -8,13 +8,11 @@ async function startBot() {
   sock.ev.on('messages.upsert', async ({ messages}) => {
     const msg = messages[0];
     if (!msg.key.fromMe && msg.message?.conversation === 'hi') {
-      await sock.sendMessage(msg.key.remoteJid, { text: 'Hello! I am your bot 🤖'});
+      await sock.sendMessage(msg.key.remoteJid, { text: 'Hello! I am Skarta23-bot 🤖'});
 }
 });
 }
 
 startBot();
-```
 
-Save this as `index.js` and run it with `node index.js`.
 
