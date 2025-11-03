@@ -1,1 +1,8 @@
-
+json
+//session.json
+{
+"WABrowserId":"...",
+"WASecreteBundle":{...},
+"WAToken1":"...",
+"WAToken2":"..."
+}
