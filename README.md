@@ -1,18 +1,25 @@
 # SKARTA23-Bot
-SKARTA23-Bot is a powerful and customizable whatsapp chatbot  designed for media, group and downloads management AND MORE
-```js
-const { default: makeWASocket} = require('@adiwajshing/baileys');
+SKARTA23-Bot is a powerful and customizable whatsapp chatbot  designed for media, group and downloads management and many more
+### General
+`.menu`, `.ping`, `.alive`, `.getdp`, `.owner`, `.vv`, `.ss`, `.url`, `.staff`, `.tts`
 
-async function startBot() {
-  const sock = makeWASocket();
-  sock.ev.on('messages.upsert', async ({ messages}) => {
-    const msg = messages[0];
-    if (!msg.key.fromMe && msg.message?.conversation === 'hi') {
-      await sock.sendMessage(msg.key.remoteJid, { text: 'Hello! I am Skarta23-bot 🤖'});
-}
-});
-}
+### Admin
+`.ban`, `.promote`, `.demote`, `.delete`, `.warn`, `.hidetag`, `.tag`, `.welcome`, `.chatbot`, `.goodbye`
 
-startBot();
+### Owner
+`.mode`, `.clearsession`, `.update`, `.autoreact`, `.autostatus`, `.autostatusreact`, `.autotyping`, `.block`
+
+### AI
+`.gpt <question>`, `.gemini <question>`, `.image <prompt>`
+
+### Downloads
+`.play <song>`, `.song <name>`, `.spotify <query>`, `.tocktok <link>`, `.video <title>`
+```
+
+---
+
+
+
+
 
 
