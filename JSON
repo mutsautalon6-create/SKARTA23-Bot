@@ -1,8 +1,8 @@
 json
 //session.json
 {
-"WABrowserId":"...",
-"WASecreteBundle":{...},
-"WAToken1":"...",
-"WAToken2":"..."
+"WABrowserId":"connecttoskarta23-bot",
+"WASecreteBundle":{t.me},
+"WAToken1":"BOT SESSION ID",
+"WAToken2":"SESSION TOKEN"
 }
